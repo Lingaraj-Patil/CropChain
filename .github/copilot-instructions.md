@@ -1,0 +1,13 @@
+- [ ] Verify that the copilot-instructions.md file in the .github directory is created.
+- [ ] Clarify Project Requirements
+- [ ] Scaffold the Project
+- [ ] Customize the Project
+- [ ] Install Required Extensions
+- [ ] Compile the Project
+- [ ] Create and Run Task
+- [ ] Launch the Project
+- [ ] Ensure Documentation is Complete
+
+- CropChain is a React.js + Vite frontend with an Express.js + MongoDB backend and Solana Devnet NFT minting.
+- Keep the UI premium, responsive, animated, and suitable for hackathon demos.
+- Prefer reusable components, clean MVC backend structure, and deployment-ready Vercel configuration.
