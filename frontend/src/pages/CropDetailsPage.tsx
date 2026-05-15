@@ -7,7 +7,7 @@ import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
 import { TimelineStepper } from '../components/ui/TimelineStepper';
 import { Button } from '../components/ui/Button';
-import { sampleCrops, lifecycleStages } from '../data/sampleData';
+import { sampleCrops, lifecycleStages } from '../data';
 
 type SampleCrop = (typeof sampleCrops)[number];
 
@@ -24,7 +24,7 @@ const getSampleCropById = (cropId: string): SampleCrop | undefined => {
 };
 
 const buildSampleTimeline = (currentStage: string) => ({
-  events: lifecycleStages.map((stage) => ({
+  events: lifecycleStages.map((stage: string) => ({
     stage,
     title: stage.charAt(0).toUpperCase() + stage.slice(1),
     description: `Sample crop is ${stage}`,

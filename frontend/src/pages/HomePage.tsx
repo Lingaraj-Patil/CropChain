@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, ShieldCheck, Sprout, BarChart3, ScanSearch, WalletCards } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { sampleCrops, sampleStats } from '../data/sampleData';
+import { sampleCrops, sampleStats } from '../data';
 import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';
@@ -30,7 +30,7 @@ const HomePage = () => (
           <Link to="/verify"><Button variant="secondary">Verify a crop</Button></Link>
         </div>
         <div className="mt-12 grid gap-4 sm:grid-cols-3">
-          {sampleStats.map((stat) => (
+          {sampleStats.map((stat: { label: string; value: string; detail: string }) => (
             <Card key={stat.label} className="bg-white/5 p-5">
               <p className="text-sm text-slate-400">{stat.label}</p>
               <p className="mt-2 text-3xl font-bold text-white">{stat.value}</p>
@@ -88,7 +88,7 @@ const HomePage = () => (
         <Link to="/consumer" className="text-sm text-slate-300 hover:text-white">View dashboard</Link>
       </div>
       <div className="grid gap-6 lg:grid-cols-2">
-        {sampleCrops.map((crop) => <CropCard key={crop.id} crop={crop} />)}
+        {sampleCrops.map((crop: any) => <CropCard key={crop.id} crop={crop} />)}
       </div>
     </section>
   </div>
