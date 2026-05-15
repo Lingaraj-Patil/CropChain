@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, ShieldCheck, Sprout, BarChart3, ScanSearch, WalletCards } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { sampleCrops, sampleStats } from '../data';
+import { sampleCrops, sampleStats } from '../data/index';
 import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';

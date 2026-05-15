@@ -7,7 +7,7 @@ import { Card } from '../components/ui/Card';
 import { Badge } from '../components/ui/Badge';
 import { TimelineStepper } from '../components/ui/TimelineStepper';
 import { Button } from '../components/ui/Button';
-import { sampleCrops, lifecycleStages } from '../data';
+import { sampleCrops, lifecycleStages } from '../data/index';
 
 type SampleCrop = (typeof sampleCrops)[number];
 
